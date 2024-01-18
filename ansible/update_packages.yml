@@ -1,0 +1,15 @@
+---
+- name: Update and upgrade apt packages
+  hosts: all
+  become: yes  # Enable privilege escalation
+  #become_user: root  # Specify the user you want to run the command as
+  tasks:
+    - name: Update packages with apt
+      when: ansible_pkg_mgr == 'apt'
+      apt:
+        update_cache: yes
+
+    - name: Upgrade packages with apt
+      when: ansible_pkg_mgr == 'apt'
+      apt:
+        upgrade: dist
