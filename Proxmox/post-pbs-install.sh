@@ -176,9 +176,9 @@ while true; do
   esac
 done
 
-if command -v pveversion >/dev/null 2>&1; then
+#if command -v pveversion >/dev/null 2>&1; then
     #echo -e "\n🛑  PVE Detected, Wrong Script!\n"
     #exit 1
-fi
+#fi
 
 start_routines
