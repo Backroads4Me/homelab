@@ -5,6 +5,8 @@
 # License: MIT
 # https://github.com/tteck/Proxmox/raw/main/LICENSE
 
+header_info()
+
 RD=$'\033[01;31m'
 YW=$'\033[33m'
 GN=$'\033[1;92m'
